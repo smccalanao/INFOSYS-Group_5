@@ -117,7 +117,7 @@
 
             <!-- Menu -->
          <ul class="nav">
-                            <li><a href="index" >Dashboard</a></li>
+                            <li><a href="/" >Dashboard</a></li>
                             <li><a href="trip-explorer">Trip Explorer</a></li>
                             <li><a href="trip-planner">Trip Planner</a></li>
                             <li><a href="gearlist">Gear Checklist</a></li>

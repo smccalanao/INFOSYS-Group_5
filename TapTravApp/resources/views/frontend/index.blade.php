@@ -60,7 +60,7 @@
 
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="index" class="active">Dashboard</a></li>
+                            <li><a href="/" class="active">Dashboard</a></li>
                             <li><a href="trip-explorer">Trip Explorer</a></li>
                             <li><a href="trip-planner">Trip Planner</a></li>
                             <li><a href="gearlist">Gear Checklist</a></li>
