@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public function index()
+    public function dashboard()
     {
-        return view('frontend.index');
+        return view('frontend.dashboard');
     }
 
     public function tripexplorer()
@@ -27,8 +27,5 @@ class FrontController extends Controller
     {
         return view('frontend.climb-gallery');
     }
-    public function profile ()
-    {
-        return view('frontend.profile');
-    }
+   
 }
