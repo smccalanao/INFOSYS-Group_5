@@ -70,7 +70,7 @@
       margin-bottom: 15px;
       border-bottom: 1px solid #444;
       padding-bottom: 5px;
-      color: #e75e8d;
+      color: #B5C7A6;
     }
 
     .profile-details p {

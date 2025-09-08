@@ -159,7 +159,7 @@ p {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -173,7 +173,7 @@ p {
 
 .main-button a:hover {
   background-color: #fff;
-  color: #e75e8d;
+  color: #B5C7A6;
 }
 
 .main-border-button a {
@@ -214,7 +214,7 @@ section {
 }
 
 .heading-section h4 {
-  color: #ec6090;
+  color: #B5C7A6;
   font-size: 34px;
   text-decoration: none;
   margin-bottom: 30px;
@@ -299,7 +299,7 @@ Pre-loader Style
   height: 16px;
   top: 12px;
   left: 15px;
-  background: #e75e8d;
+  background: #B5C7A6;
   border-radius: 50%;
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -322,7 +322,7 @@ Pre-loader Style
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  background: #e75e8d;
+  background: #B5C7A6;
   border-radius: 50%;
 }
 
@@ -479,13 +479,13 @@ Header Style
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #e75e8d !important;
+  color: #B5C7A6 !important;
 }
 
 .header-area .main-nav .nav li:last-child:hover a,
 .header-area .main-nav .nav li:last-child a.active {
   color: #fff !important;
-  background-color: #e75e8d !important;
+  background-color: #B5C7A6 !important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -523,7 +523,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
   display: block;
   position: absolute;
   width: 30px;
@@ -534,7 +534,7 @@ Header Style
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -543,7 +543,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
   display: block;
   position: absolute;
   width: 30px;
@@ -554,7 +554,7 @@ Header Style
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -595,11 +595,11 @@ Header Style
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -607,11 +607,11 @@ Header Style
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #e75e8d;
+  background-color: #B5C7A6;
 }
 
 .header-area.header-sticky {
@@ -691,7 +691,7 @@ Header Style
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #e75e8d!important;
+    color: #B5C7A6!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -753,13 +753,13 @@ Header Style
   }
   .header-area .main-nav .nav li a:hover {
     background: #fff !important;
-    color: #e75e8d!important;
+    color: #B5C7A6!important;
   }
   .header-area .main-nav .nav li:last-child a img {
     display: none;
   }
   .header-area .main-nav .nav li:last-child a:hover {
-    color: #ec6090 !important;
+    color: #B5C7A6 !important;
     background-color: transparent !important;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
@@ -802,7 +802,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/banner.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
@@ -825,7 +825,7 @@ Banner Style
 
 .main-banner h4 em {
   font-style: normal;
-  color: #ec6090;
+  color: #B5C7A6;
 }
 
 /* 
@@ -889,7 +889,7 @@ Most Popular Style
 }
 
 .most-popular .item ul li:last-child i {
-  color: #ec6090;
+  color: #B5C7A6;
 }
 
 .most-popular .main-button {
@@ -982,7 +982,7 @@ footer p a {
 }
 
 footer p a:hover {
-  color: #ec6090;
+  color: #B5C7A6;
 }
 
 /* 
@@ -1021,7 +1021,7 @@ Featured Games Style
 .featured-games .item .thumb .hover-effect h6 {
   background-color: rgba(31,33,34,0.95);
   display: inline-block;
-  color: #ec6090;
+  color: #B5C7A6;
   font-weight: 600;
   font-size: 14px;
   padding: 10px 20px;
@@ -1062,7 +1062,7 @@ Featured Games Style
 }
 
 .featured-games .item ul li:last-child i {
-  color: #ec6090;
+  color: #B5C7A6;
 }
 
 .featured-games .owl-nav {
@@ -1092,7 +1092,7 @@ Featured Games Style
 .featured-games .owl-nav .owl-prev span:hover,
 .featured-games .owl-nav .owl-next span:hover {
   opacity: 1;
-  color: #ec6090;
+  color: #B5C7A6;
 }
 
 .top-downloaded {
@@ -1142,7 +1142,7 @@ Featured Games Style
   height: 46px;
   text-align: center;
   line-height: 46px;
-  color: #ec6090;
+  color: #B5C7A6;
   background-color: #27292a;
   border-radius: 50%;
 }
@@ -1159,7 +1159,7 @@ Featured Games Style
 
 .top-downloaded .text-button a {
   font-weight: 600;
-  color: #ec6090;
+  color: #B5C7A6;
   font-size: 15px;
 }
 
