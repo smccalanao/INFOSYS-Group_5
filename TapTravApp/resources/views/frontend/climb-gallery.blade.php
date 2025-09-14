@@ -133,7 +133,22 @@
         </form>
     </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const btnOpenAdd = document.getElementById('btnOpenAdd');
+    const climbModal = document.getElementById('climbModal');
 
+    if (btnOpenAdd && climbModal) {
+        btnOpenAdd.addEventListener('click', function () {
+            climbModal.classList.remove('hidden');
+        });
+    }
+});
+
+function closeModal() {
+    document.getElementById('climbModal').classList.add('hidden');
+}
+</script>
 @push('styles')
 <style>
     .gallery-card { overflow: visible; }
