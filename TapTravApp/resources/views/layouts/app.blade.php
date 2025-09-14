@@ -91,6 +91,17 @@
 </header>
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuTrigger = document.querySelector('.menu-trigger');
+    const nav = document.querySelector('.header-area .main-nav .nav');
+
+    menuTrigger.addEventListener('click', function() {
+        nav.classList.toggle('active'); // use class for styling
+    });
+});
+</script>
+
 
 
     <!-- ***** Page Content ***** -->

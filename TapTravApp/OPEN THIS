@@ -1,0 +1,5 @@
+run this in the laragon terminal
+
+php artisan db:seed --class=TripSeeder
+
+para mag load ang mga images sa trip explorer 

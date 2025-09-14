@@ -34,5 +34,10 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
+//dashboard p climb
+Route::get('/', [FrontController::class, 'dashboard'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
 
 require __DIR__.'/auth.php';
