@@ -12,17 +12,12 @@
 </button>
 </div>
 
-@if($climbs->isEmpty())
-    <div class="w-full flex justify-center items-center py-20">
-        <p class="text-white">No climbs yet.</p>
-    </div>
-@else
-    @foreach($climbs as $climb)
-        <div class="col-lg-4 col-sm-6 mb-6">
-            <div class="gallery-card bg-white rounded-xl shadow-md overflow-visible relative">
-                <div class="relative">
-                    <img src="{{ asset('storage/' . $climb->image_url) }}" alt="{{ $climb->title }}"
-                         class="w-full h-48 object-cover rounded-t-xl">
+@forelse($climbs as $climb)
+    <div class="col-lg-4 col-sm-6 mb-6">
+        <div class="gallery-card bg-white rounded-xl shadow-md overflow-visible relative">
+            <div class="relative">
+                <img src="{{ asset('storage/' . $climb->image_url) }}" alt="{{ $climb->title }}"
+                     class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
 
                     {{-- dropdown in top-right corner --}}
                     <div class="absolute top-2 right-2">
@@ -66,7 +61,11 @@
                 </div>
             </div>
         </div>
-    @endforeach
+    @empty
+        <div class="w-full flex justify-center items-center py-20">
+            <p class="text-white">No climbs yet.</p>
+        </div>
+    @endforelse
     <div id="deleteConfirmModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
     <div class="bg-[#B5C7A6] w-full max-w-sm p-6 rounded-lg shadow-lg">
         <h2 class="text-lg font-semibold mb-4">Confirm Deletion</h2>
@@ -77,7 +76,6 @@
         </div>
     </div>
 </div>
-@endif
 </div>
 </div>
 

@@ -12,8 +12,7 @@ class ClimbController extends Controller
     // Show gallery (only user's climbs)
  public function climb()
 {
-    $climbs = Climb::with('user')
-        ->latest()
+    $climbs = Climb::latest()
         ->get();
 
     return view('frontend.climb-gallery', compact('climbs'));
