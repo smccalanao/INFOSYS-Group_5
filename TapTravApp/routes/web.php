@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ClimbController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\PlannerController;
 
 
 // Dashboard using FrontController
@@ -38,6 +39,16 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/', [FrontController::class, 'dashboard'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
+
+//Trip Panner
+Route::middleware(['auth'])->group(function () {
+    Route::get('/planner', [PlannerController::class, 'index']);
+    Route::post('/planner', [PlannerController::class, 'store']);
+    Route::get('/planner/{id}', [PlannerController::class, 'show']);
+    Route::put('/planner/{id}', [PlannerController::class, 'update']);
+    Route::delete('/planner/{id}', [PlannerController::class, 'destroy']);
+});
+
 
 
 require __DIR__.'/auth.php';
