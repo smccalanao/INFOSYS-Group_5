@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ClimbController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
-
+use App\Http\Controllers\GearController;
 
 // Dashboard using FrontController
 Route::get('/', [FrontController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
@@ -39,5 +39,13 @@ Route::get('/', [FrontController::class, 'dashboard'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+//gearchecklist
+
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/gear', [GearController::class, 'gearlist'])->name('gear.list');
+    Route::post('/gear/save', [GearController::class, 'save'])->name('gear.save');
+});
 
 require __DIR__.'/auth.php';
