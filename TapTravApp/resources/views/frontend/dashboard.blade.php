@@ -39,9 +39,7 @@
                         </div>
                     @endforelse
                 </div>
-                <div class="main-button mt-3">
-                    <a href="{{ url('/trip-explorer') }}">Discover More Climbs</a>
-                </div>
+              
             </div>
         </div>
     </div>

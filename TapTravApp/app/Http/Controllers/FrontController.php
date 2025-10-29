@@ -52,4 +52,10 @@ class FrontController extends Controller
     {
         return view('frontend.climb-gallery');
     }
+
+    public function profile()
+    {
+        // Redirect to the application's default profile edit route
+        return redirect()->route('profile.edit');
+    }
 }
