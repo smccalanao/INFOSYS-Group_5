@@ -4,8 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ClimbController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\GearController;
 use App\Http\Controllers\PlannerController;
-
 
 // Dashboard using FrontController
 Route::get('/', [FrontController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
@@ -34,13 +34,13 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/climbs/{climb}', [ClimbController::class, 'destroy'])->name('climbs.destroy');
 });
 
+// Gear Checklist routes
+Route::middleware('auth')->group(function () {
+    Route::get('/gear', [GearController::class, 'gearlist'])->name('gear.list');
+    Route::post('/gear/save', [GearController::class, 'save'])->name('gear.save');
+});
 
-//dashboard p climb
-Route::get('/', [FrontController::class, 'dashboard'])
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
-
-//Trip Panner
+// Trip Planner routes
 Route::middleware(['auth'])->group(function () {
     Route::get('/planner', [PlannerController::class, 'index']);
     Route::post('/planner', [PlannerController::class, 'store']);
@@ -48,7 +48,5 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/planner/{id}', [PlannerController::class, 'update']);
     Route::delete('/planner/{id}', [PlannerController::class, 'destroy']);
 });
-
-
 
 require __DIR__.'/auth.php';
